@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contagem Regressiva - Olimpíadas e Concursos 2026</title>
+    <style>
+        .widget-container {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #1a1a1a;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .evento {
+            background: #2d2d2d;
+            margin: 12px 0;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+        .evento.inscricao { border-left-color: #2196F3; }
+        .evento.prova { border-left-color: #FF9800; }
+        .contador {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .info {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        .urgente { color: #ff4444; }
+        .avisos {
+            background: #ff4444;
+            color: white;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 15px 0;
+            text-align: center;
+        }
+        .categoria {
+            color: #4CAF50;
+            margin: 20px 0 10px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <h2>⏰ Contagem Regressiva - Olimpíadas & Concursos 2026</h2>
+        
+        <div class="avisos">
+            ⚠️ Datas baseadas em ciclos anteriores - Sujeitas a confirmação oficial para 2026
+        </div>
+
+        <!-- OLIMPÍADAS UNIVERSITÁRIAS -->
+        <h3 class="categoria">🎓 Olimpíadas Universitárias 2026</h3>
+        
+        <div class="evento inscricao">
+            <strong>OBQ - Inscrições (Universitário)</strong>
+            <div class="contador" id="obq-inscricao">Calculando...</div>
+            <div class="info">Previsão: 01 de Março de 2026 (base histórica)</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>OBI - Inscrições (Nível Programação - Uni)</strong>
+            <div class="contador" id="obi-inscricao">Calculando...</div>
+            <div class="info">Previsão: 05 de Fevereiro de 2026 (base histórica)</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>OBM - Inscrições (Nível Universitário)</strong>
+            <div class="contador" id="obm-inscricao">Calculando...</div>
+            <div class="info">Previsão: 01 de Abril de 2026 (base histórica)</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>OBF - Inscrições (Nível Universitário)</strong>
+            <div class="contador" id="obf-inscricao">Calculando...</div>
+            <div class="info">Previsão: 15 de Abril de 2026 (base histórica)</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>ELON Lajes - Inscrições (Módulo Universitário)</strong>
+            <div class="contador" id="elon-inscricao">Calculando...</div>
+            <div class="info">Previsão: 15 de Julho de 2026 (base histórica) - Prova Online</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>Olimpíada de Matemática do RN (OMRN) - Inscrições</strong>
+            <div class="contador" id="omrn-inscricao">Calculando...</div>
+            <div class="info">Previsão: 01 de Abril de 2026 - Aberta a todos os estados</div>
+        </div>
+
+        <!-- SAT 2026 -->
+        <h3 class="categoria">🌎 SAT - International Dates 2026</h3>
+        
+        <div class="evento inscricao">
+            <strong>SAT - Março 2026 (Inscrição Regular)</strong>
+            <div class="contador" id="sat-marco">Calculando...</div>
+            <div class="info">Previsão: Prazo: 12 de Fevereiro de 2026 - Prova: 14 de Março 2026</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>SAT - Maio 2026 (Inscrição Regular)</strong>
+            <div class="contador" id="sat-maio">Calculando...</div>
+            <div class="info">Previsão: Prazo: 08 de Abril de 2026 - Prova: 02 de Maio 2026</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>SAT - Agosto 2026 (Inscrição Regular)</strong>
+            <div class="contador" id="sat-agosto">Calculando...</div>
+            <div class="info">Previsão: Prazo: 24 de Julho de 2026 - Prova: 29 de Agosto 2026</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>SAT - Outubro 2026 (Inscrição Regular)</strong>
+            <div class="contador" id="sat-outubro">Calculando...</div>
+            <div class="info">Previsão: Prazo: 04 de Setembro de 2026 - Prova: 03 de Outubro 2026</div>
+        </div>
+
+        <!-- CONCURSOS MILITARES 2026 -->
+        <h3 class="categoria">🎖️ Concursos Militares - Previsões 2026</h3>
+        
+        <div class="evento inscricao">
+            <strong>ESPCEX - Inscrições</strong>
+            <div class="contador" id="espcex-inscricao">Calculando...</div>
+            <div class="info">Previsão: Maio 2026 (base histórica: 01-31/05)</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>ITA - Inscrições</strong>
+            <div class="contador" id="ita-inscricao">Calculando...</div>
+            <div class="info">Previsão: Agosto 2026 (base histórica: 01/08-10/09)</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>IME - Inscrições</strong>
+            <div class="contador" id="ime-inscricao">Calculando...</div>
+            <div class="info">Previsão: Junho 2026 (base histórica: 03-28/06)</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>AFA - Inscrições</strong>
+            <div class="contador" id="afa-inscricao">Calculando...</div>
+            <div class="info">Previsão: Fevereiro 2026 (base histórica: 07/02-13/03)</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>EN - Escola Naval - Inscrições</strong>
+            <div class="contador" id="en-inscricao">Calculando...</div>
+            <div class="info">Previsão: Março 2026 (base histórica: 07/03-14/04)</div>
+        </div>
+
+        <div class="evento inscricao">
+            <strong>ESA - Escola de Sargento - Inscrições</strong>
+            <div class="contador" id="esa-inscricao">Calculando...</div>
+            <div class="info">Previsão: Abril 2026 (base histórica: 15/04-31/05)</div>
+        </div>
+
+        <div class="info" style="text-align: center; margin-top: 20px;">
+            Atualizado em: <span id="atualizacao"></span><br>
+            Previsões baseadas em ciclos históricos - Datas oficiais serão confirmadas em 2025/2026
+        </div>
+    </div>
+
+    <script>
+        // DATAS PARA 2026 - Baseadas em projeções históricas
+        const eventos = {
+            // OLIMPÍADAS UNIVERSITÁRIAS 2026
+            'obq-inscricao': new Date('2026-03-01T23:59:00'), // OBQ
+            'obi-inscricao': new Date('2026-02-05T23:59:00'), // OBI
+            'obm-inscricao': new Date('2026-04-01T23:59:00'), // OBM
+            'obf-inscricao': new Date('2026-04-15T23:59:00'), // OBF
+            'elon-inscricao': new Date('2026-07-15T23:59:00'), // ELON Lajes
+            'omrn-inscricao': new Date('2026-04-01T23:59:00'), // OMRN
+            
+            // SAT 2026 (Projeções baseadas no padrão anual)
+            'sat-marco': new Date('2026-02-12T23:59:00'), // Março - Regular
+            'sat-maio': new Date('2026-04-08T23:59:00'), // Maio - Regular
+            'sat-agosto': new Date('2026-07-24T23:59:00'), // Agosto - Regular
+            'sat-outubro': new Date('2026-09-04T23:59:00'), // Outubro - Regular
+            
+            // CONCURSOS MILITARES 2026 (Previsões base histórica)
+            'espcex-inscricao': new Date('2026-05-15T23:59:00'), // ESPCEX
+            'ita-inscricao': new Date('2026-08-15T23:59:00'), // ITA
+            'ime-inscricao': new Date('2026-06-15T23:59:00'), // IME
+            'afa-inscricao': new Date('2026-02-20T23:59:00'), // AFA
+            'en-inscricao': new Date('2026-03-20T23:59:00'), // Escola Naval
+            'esa-inscricao': new Date('2026-04-20T23:59:00'), // ESA
+        };
+
+        function atualizarContadores() {
+            const agora = new Date();
+            
+            for (const [id, dataAlvo] of Object.entries(eventos)) {
+                const elemento = document.getElementById(id);
+                if (!elemento) continue;
+
+                const diferenca = dataAlvo - agora;
+                
+                if (diferenca <= 0) {
+                    elemento.innerHTML = '<span class="urgente">⏰ PRAZO ENCERRADO</span>';
+                    continue;
+                }
+
+                const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+                const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+                if (dias < 7) {
+                    elemento.innerHTML = `<span class="urgente">${dias}d ${horas}h ${minutos}m ${segundos}s ⚠️ URGENTE</span>`;
+                } else if (dias < 30) {
+                    elemento.innerHTML = `<span style="color: #FF9800">${dias}d ${horas}h ${minutos}m ${segundos}s 🔥 FALTAM POUCOS DIAS!</span>`;
+                } else if (dias < 90) {
+                    elemento.innerHTML = `<span style="color: #4CAF50">${dias} dias | ${horas}h ${minutos}m</span>`;
+                } else {
+                    elemento.innerHTML = `${dias} dias restantes`;
+                }
+            }
+
+            // Atualizar data de atualização
+            document.getElementById('atualizacao').textContent = new Date().toLocaleString('pt-BR');
+        }
+
+        // Atualizar a cada segundo
+        setInterval(atualizarContadores, 1000);
+        atualizarContadores(); // Executar imediatamente
+    </script>
+</body>
+</html>
